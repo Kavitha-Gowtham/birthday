@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papu</title>           
+  <style>
+    * {
+      box-sizing: border-box;
+
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+.      margin: 0;
+      font-family: Arial;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    /*     
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }  */
+  </style>
+
+
+
+</head>
+
+<body>
+  <h1 style="text-align: center; color:blue;">Wish You Many More Happy Return of the Day en Thangameayy..&#128525;
+    &#129392;
+    &#128151;</h1>
+  <br><br>
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="7.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="8.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="9.jpg" style="width:100%">
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div><br><br>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+  <h1 style="text-align: center; color: red;"> Feb 26 Today is most important day in My life, because today your birthday
+    &#129392;&#128525;&#128536;</h1>
+  <h1 style="text-align: center;color: red;">Happy borthday da kuttypaiyay</h1><br>
+  <br>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="10.jpg">
+        <img src="10.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Vekkama&#129315; &#128514;</div>
+    </div>
+  </div><br>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="11.jpg">
+        <img src="11.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">cutie boy&#129315; &#128514;</div>
+    </div>
+  </div><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="12.jpg">
+        <img src="12.Jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Lovely&#129315; &#128514;</div>
+    </div>
+  </div><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="13.jpg">
+        <img src="13.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">So Cute&#128525;</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="14.jpg">
+        <img src="15.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">No Words, I'am so lucky &#128525; &#129392;</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="16.jpg">
+        <img src="16.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">LOVE&#128525; &#129392;</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="17.jpg">
+        <img src="17.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Nizz &#129392;</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="18.jpg">
+        <img src="18.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Cute Cute Pics&#128521; &#128519;</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="19.jpg">
+        <img src="20.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">En thangoam &#128586;</div>
+    </div>
+  </div><br>
+
+
+  <h1 style="font-weight: bold; color: red; text-align:center;">Happy Brith Day MA</h1><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="21.jpg">
+        <img src="22.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Impressed&#128525; &#129392;</div>
+    </div>
+  </div><br>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="23.jpg">
+        <img src="23.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">&#128525;</div>
+    </div>
+  </div><br>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="24.jpg">
+        <img src="24.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Na dhan da driveruuu&#128525;</div>
+    </div>
+  </div><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="25.jpg">
+        <img src="25.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Mone Love&#128514; &#129315;</div>
+    </div>
+  </div><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="26.jpg">
+        <img src="26.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">&#129325; &#129303;</div>
+    </div>
+  </div><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="27.jpg">
+        <img src="27.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">Devotional&#129322; &#129392; &#128536;</div>
+    </div>
+  </div><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="28.jpg">
+        <img src="28.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;">my favorite &#129392; &#128536;</div>
+    </div>
+  </div><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="29.jpg">
+        <img src="29.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc" style="font-weight: bold;"> Candle Light&#129392; &#128536;</div>
+    </div>
+  </div><br><br>
+
+  <h1 style="font-weight: bold; color:; text-align:center;">Happy Born Day Papu</h1><br>
+
+
+
+
+
+  <div class="row">
+    <div class="column">
+      <img src="30.jpg" style="width:100%">
+      <img src="31.jpg" style="width:100%">
+      <img src="32.jpg" style="width:100%">
+      <img src="33.jpg" style="width:100%">
+      <img src="34.jpg" style="width:100%">
+
+
+    </div>
+
+    <div class="column">
+      <img src="35" style="width:100%">
+      <img src="36.jpg" style="width:100%">
+      <img src="37.jpg" style="width:100%">
+      <img src="38.jpg" style="width:100%">
+      <img src="39.jpg" style="width:100%">
+
+    </div>
+
+    <div class="column">
+      <img src="40.jpg" style="width:100%">
+      <img src="41.jpg" style="width:100%">
+      <img src="42.jpg" style="width:100%">
+      <img src="43.jpg" style="width:100%">
+      <img src="44" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img src="45.jpg" style="width:100%">
+      <img src="46.jpg" style="width:100%">
+      <img src="47.jpg" style="width:100%">
+      <img src="48.jpg" style="width:100%">
+      <img src="49.jpg" style="width:100%">
+
+    </div>
+  </div><br>
+  <h1 style="font-weight: bold; color:; text-align:center;">Happy born day my Hero &#129392; &#128525; &#128536;</h1>
+  <br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="50.jpg">
+        <img src="59.jpg" alt="Mountains" width="600" height="400">
+      </a>
+
+    </div>
+  </div><br><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="51.jpg">
+        <img src="51.jpg" alt="Mountains" width="600" height="400">
+      </a>
+
+    </div>
+  </div><br><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="52.jpg">
+        <img src="53.jpg" alt="Mountains" width="600" height="400">
+      </a>
+
+    </div>
+  </div><br><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="54.jpg">
+        <img src="54.jpg" alt="Mountains" width="600" height="400">
+      </a>
+
+    </div>
+  </div><br><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="19.jpg">
+        <img src="10.jpg" alt="Mountains" width="600" height="400">
+      </a>
+
+    </div>
+  </div><br><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="11.jpg">
+        <img src="11.jpg" alt="Mountains" width="600" height="400">
+      </a>
+
+    </div>
+  </div><br><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="12.jpg">
+        <img src="12.jpg" alt="Mountains" width="600" height="400">
+      </a>
+    </div>
+  </div><br><br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="13.jpg">
+        <img src="13.jpg" alt="Mountains" width="600" height="400">
+      </a>
+    </div>
+  </div><br><br>
+  <br>
+  <div>
+    <h1 style="font-weight: bold; color:yellowgreen; text-align:center;"> small video for you MA
+      play It </h1>
+  </div><br>
+  <br><br>
+
+  <style>
+    video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+  <video width="400" controls>
+    <source src="v1.mp4" type="video/mp4">
+    <source src="v1.ogg" type="video/ogg">
+
+  </video><br><br>
+  <video width="400" controls>
+    <source src="v2.mp4" type="video/mp4">
+    <source src="v2.ogg" type="video/ogg">
+
+  </video><br><br>
+  <video width="400" controls>
+    <source src="v3.mp4" type="video/mp4">
+    <source src="v3.ogg" type="video/ogg">
+
+  </video><br><br>
+  <video width="400" controls>
+    <source src="v4.mp4" type="video/mp4">
+    <source src="v4.ogg" type="video/ogg">
+
+  </video><br><br>
+  <video width="400" controls>
+    <source src="v5.mp4" type="video/mp4">
+    <source src="v5.ogg" type="video/ogg">
+  </video>
+  <br>
+  <br>
+    </div><br>
+  <h1 style="font-weight: bold; color:; text-align:center;">Wish you very happy birthday &#129392; &#128525; &#128536;<br/><br>
+	HDB to my sweetie pie...&#129392; No one can ever love and care me the way you do &#128536;Love You to the moon and back&#128525;I treasure you more than anything in this world &#128536;Thank you for who are and all that you do &#128536; I feel so blessed to have found true love in your arms &#128586;You are such a sweet soul &#128536; Tons of love to you my dear Husband
+	
+  </h1>
+  <br>
+  </div><br>
+  <h1 style="font-weight: bold; color:; text-align:center;">you r my best friend &#129392; &#128525; &#128536;<br/><br>
+	<br/><br><br/><br><br/><br>
+		MISS YOU Papu<br/><br>
+		
+		itha porumaiya pathathuku romba THANKS.....&#129392;& once again HAPPY BORN DAY chellam
+  
+  </h1>
+  <br>
+
+  
+
+
+
+</body>
+
+</html>
